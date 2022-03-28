@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="contenido">
+  <div id="modoOscuro"></div>
+<header>
+  <img src="images/icon-menu.svg" alt="" id="main" onclick="header()">
+
+  <div id="First">
+
+    <div id="logo">
+    <img src="images/logo.svg"> 
+  </div>
+    <div id="head">
+    <img src="images/icon-close.svg" width="20px" height="20px">
+    <a>Collections</a>
+    <a>Men</a>
+    <a>Women</a>
+    <a>About</a>
+    <a>Contact</a>
+  </div>
+</div>
+  <div id="second">
+    <p id="new"></p>
+    <img src="images/icon-cart.svg" onmouseover="carta()">
+    <div id="cart" onmouseleave="cartafuera()">
+      <div id="nameCart">
+      <p>Cart</p>
+      <hr>
+    </div>
+      <div id="producto">
+        <div id="precioyimagen">
+          <img src="images/image-product-1-thumbnail.jpg" id="produtoZapato">
+          <div id="textoprecio">
+            <p>Fall limited Edition Sneakers</p>
+              <p id="precioTotal">$125.00</p>
+
+          </div>
+        <img src="images/icon-delete.svg" id="delete">
+      </div>
+        <button>Checkout</button>
+      </div>
+      <h5>Your cart is Empty</h5>
+    </div>
+    <img src="images/image-avatar.png" id="avatar">
+  </div>
+</header>
+<hr >
+
+<div id="content">
+  <div id="cuadrodealertaPhone">
+    <div id="imagenPhone"></div>
+    <div id="botonesPhone">
+      <img src="images/icon-previous.svg" alt="" onclick="previous()">
+      <img src="images/icon-next.svg" alt="" onclick ="next()">
+    </div>
+</div>
+  <div id="shoes">
+ 
+    <img src="images/image-product-1.jpg" alt="" width="100%" height="60%" id="firstIMG" onclick="dialogo()">
+    <div id="other">
+       <img src="images/image-product-1.jpg" alt="" class="separar" onmouseover="img1()">
+      <img src="images/image-product-2.jpg" alt="" class="separar" onmouseover="img2()">
+      <img src="images/image-product-3.jpg" alt="" class="separar" onmouseover="img3()">
+      <img src="images/image-product-4.jpg" alt="" id="img4" onmouseover="img4()" >
+    </div>
+  </div>
+  <div id="information">
+  <p id="sub">SNEAKER COMPANY</p>
+
+  <p id="title">Fall Limited Edition Sneakers</p>
+  <p id="text">
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+</p>
+<div id="total">
+  <div id="price">
+  <p id="number">$125.00</p>
+  <p id="porcent">50%</p>
+</div>
+  <p id="before">$250.00</p>
+</div>
+  <div>
+    <div id="amount">
+      <div id="amountIMG">
+  <img src="images/icon-minus.svg"alt="" width="10px " height="5px" onclick="quitar()">
+  <p id="cantidad">0</p>
+  <img src="images/icon-plus.svg" alt=""width="10px " height="10px" onclick="agregar()">
+</div>
+    <button onclick="aceptar()"><img src="images/iconoCartButton.svg" > Add to cart</button>
+</div>
+</div>
+ 
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lakinov</a>.
+
+  </div>
+</section>
+  <div id="cuadrodealerta">
+      <img src="images/icon-close.svg" alt="" id="cerrar" onclick ="cerrar()">
+      <img src="images/image-product-1.jpg" alt="" id="cuadroImagen">
+      <div id="botones">
+        <img src="images/icon-previous.svg" alt="" onclick="previous()">
+        <img src="images/icon-next.svg" alt="" onclick ="next()">
+      </div>
+      <div id="imagenesSecundarias">
+        <img src="images/image-product-1-thumbnail.jpg" alt="" onclick="img1()">
+        <img src="images/image-product-2-thumbnail.jpg" alt=""  onclick="img2()">
+        <img src="images/image-product-3-thumbnail.jpg" alt=""  onclick="img3()">
+        <img src="images/image-product-4-thumbnail.jpg" alt="" id="img4" onclick="img4()" >
+      </div>
+  </div>
+  <script src="codigo.js"></script>
+
+
+</body>
+</html>

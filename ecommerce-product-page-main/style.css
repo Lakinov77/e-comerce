@@ -1,0 +1,511 @@
+body{
+    padding: 0;
+    margin:0;
+    min-height:100vh;
+}
+*{
+    transition: all 2s;
+    font-family: "Kumbh";
+    color: hsl(219, 9%, 45%);
+}
+@font-face {
+    font-family: "Kumbh";
+    src: url("KumbhSans-VariableFont_wght.ttf");
+}
+
+#modoOscuro{
+    background-color:black;
+    position:absolute;
+    width:100%;
+    display:none;
+    height:100%;
+    opacity: 0.6;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+}
+#main{
+    display:none;
+}
+#contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+}
+#First{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100%;
+    width:50%;
+
+}
+hr{
+    width:75%;
+    align-self: center;
+}
+#logo{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#head{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width:80%;
+}
+#second{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+
+    width:15%;
+}
+#cart{
+    position: absolute;
+    width:20%;
+    margin-top: 18%;
+    margin-right: 10%;
+    background-color:white;
+    height:30%;
+    padding:0;
+    display: none;
+    flex-direction:column;
+    box-shadow: 0px 10px 10px 3px rgb(182, 182, 182);
+    border-radius:10px;
+    align-items: center;
+    justify-content:flex-start;
+}
+#nameCart{
+    display: flex;
+    flex-direction:column;
+    padding:0;
+    justify-content:flex-start;
+    height:25%;
+    width:100%;
+}
+#nameCart p {
+    font-family: "bold";
+    color: black;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#nameCart hr{
+    width:100%;
+}
+#cart h5{
+    margin-top: 25%;
+}
+
+#avatar{
+    border-radius: 50%;
+    width:20%;
+    margin-left: 10%;
+    height:60%;
+    margin-right: 10%;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+    width:75vw;
+    height:40vw;
+    justify-content: flex-start;
+}
+#shoes{
+    display: flex;
+    width:32.5%;
+    margin-left: 5%;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+#shoes img{
+    margin-top: 12.5%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#other{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    justify-content:flex-start;
+    align-items:flex-start;
+    height:20%;
+}
+#other img{
+    border-radius: 10px;
+    width:20%;
+    height:60%;
+}
+#other img:hover{
+    border: 1px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+.separar{
+    margin-right: 6.5%;
+}
+#information{
+
+    display: flex;
+    width:40%;
+    flex-direction: column;
+    height:100%;
+    justify-content:center;
+    margin-left: 10%;
+}
+@font-face {
+    font-family: "bold";
+    src: url("Outfit-Bold.ttf");
+}
+#title{
+    margin:0;
+    padding:0;
+    margin-bottom: 3%;
+    font-family:"bold" ;
+    color: rgb(26, 26, 26);
+    font-size: 40px;
+}
+
+@keyframes opacidad {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#sub{
+    font-family:"bold" ;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: hsl(26, 100%, 55%);
+
+}
+#price{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 0;
+    margin:0;
+}
+#amount{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    width:75%;
+    height:80%;
+
+}
+#amount button{
+    width:60%;
+    height:100%;
+    border-radius: 10px;
+    border: none;
+    background-color:  hsl(26, 100%, 55%);
+    color:  #ffede0;
+    font-family: "bold";
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    cursor: pointer;
+}
+#amount button:hover{
+    opacity: 0.5;
+}
+#amountIMG{
+    background-color:  hsl(223, 64%, 98%);
+    border-radius: 10px;
+    width:35%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+#number{
+    font-size: 20px;
+    color:black;
+    font-family: "bold";
+    padding:0;
+    margin: 0;
+}
+#porcent{
+    font-size: 14px;
+    font-family: "bold";
+    background-color: hsl(25, 100%, 94%);
+    padding:4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5%;
+    border-radius: 5px;
+    color:  hsl(26, 100%, 55%);
+}
+#total{
+    font-size: 15px;
+    display:flex;
+    flex-direction:column;
+}
+#before{
+    color:  hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+#new{
+    position:absolute;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    padding-right: 4px;
+    font-size: 10px;
+    color: white;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    width:0.5%;
+    font-family: "bold";
+    padding-left: 8px;
+}
+#amountIMG img:hover{
+    cursor:pointer;
+}
+#producto{
+    width:100%;
+    height:100%;
+    display:none;
+    flex-direction:column;
+}
+h5{
+    display: flex;
+}
+#producto button{
+    width:80%;
+    height:30%;
+    margin-top:5%;
+    border-radius: 10px;
+    border: none;
+    background-color:  hsl(26, 100%, 55%);
+    color:  #ffede0;
+    font-family: "bold";
+    align-self: center;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    cursor: pointer;
+}
+#precioyimagen{
+    margin-top:  2%;
+    display: flex;
+    margin: 0;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+}
+#produtoZapato{
+    width:15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius:5px;
+    height:60%;
+}
+#delete{
+    width:5%;
+    height:20%;
+    margin-right: 2%;
+    margin: 0;
+    margin-left:2%;
+}
+precio{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    width:50%;
+    padding:0;
+}
+#textoprecio{
+    margin: 0;
+    padding:0;
+}
+#cuadrodealerta{
+    position:absolute;
+    top: 0;
+    height:100%;
+    width:33.33%;
+    left:33.33%;
+    display:none; 
+    flex-direction:column;
+    justify-content:flex-start;
+}
+#cuadroImagen{
+    width:100%;
+    height:65%;
+    margin-top: 5%;
+    border-radius:20px;
+}
+#cerrar{
+    align-self: flex-end;
+    width:25px;
+    margin-top: 5%;
+    height: 25px;
+}
+#botones{
+    position:absolute;
+    width:110%;
+    left:-5%;
+    display:flex;
+    flex-direction:row;
+    top: 37%;
+    justify-content:space-between;
+}
+#botones img{
+    width:20px;
+    height:20px;
+    background-color: #ffede0;
+    padding:20px;
+    border-radius:50%;
+    
+}
+#imagenesSecundarias{
+    height:25%;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content:space-around;
+}
+#imagenesSecundarias img{
+    height:40%;
+    border-radius:10px;
+    width:15%;
+    margin-bottom: 10%;
+    align-self: center;
+}
+#cuadrodealertaPhone{
+    display:none;
+}
+
+@media screen and (max-width:720px)   {
+    #head{
+        display: none;
+        flex-direction: row;
+        justify-content:space-evenly;
+        width:80%;
+    }
+    #content{
+        flex-direction: column;
+        width: 100%;
+        height:60%;
+        justify-content:flex-start;
+        padding:0;
+    }
+    hr{
+        display:none;
+    }
+    #total{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    #shoes{
+        display:none;
+    }
+    #cuadrodealertaPhone{
+        display:flex;
+        background-image: url("images/image-product-1.jpg");
+        background-size: 100% 100%;
+        height:32vh;
+        width:100vw;
+    }
+    #botonesPhone{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        top: 25%;
+        width:100%;
+    }
+    #botonesPhone img{
+        border-radius:100%;
+        background-color:white;
+        padding:10px;
+        width:5px;
+        margin-left: 2%;
+        margin-right: 2%;
+        height:5px;
+        margin-top: 20%;
+    }
+    #information{
+        display:flex;
+        width:81%;
+        margin-right: 5%;
+        align-self: flex-start;
+        justify-content:flex-start;
+        flex-direction:column;
+    }
+    header{
+        width:100vw;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+    }
+    #logo{
+        margin-left: 20%;
+        width:40%;
+        height:80%;
+    }
+    #logo img{ 
+        width:30vw;
+        height:30%;
+    }
+    #sub{
+        font-size: 15px;
+        margin: 0;
+        margin-top: 5%;
+        padding: 0;
+    }
+    #title{
+        font-size: 25px;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+    #text{
+        width:110%;
+        font-size: 13px;
+    }
+    #amount{
+        display:flex;
+        flex-direction:column;
+        width:80vw;
+        align-items: center;
+        justify-content:space-around;
+        height:18vh
+    }
+    #amountIMG{
+        width:100%;
+        height:35%;
+        margin: 0;
+    }
+    #amount button{
+        width:100%;
+        height:35%;
+        display:flex;
+        margin:0;
+        flex-direction:row;
+        justify-content:center;
+        
+    }
+    #main{
+        display:block;
+    }
+}
